@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hummanizer - Transform AI Text into Natural Human Writing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-robot me-2"></i>
+                HUMMANIZER
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary ms-3" onclick="startApp()">
+                    Get Started Free
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4 hero-title">
+                        Transform AI Text Into <span class="text-gradient">Natural Human</span> Writing
+                    </h1>
+                    <p class="lead mb-5 text-muted">
+                        Bypass AI detection with our advanced humanization technology. Make your content undetectable and perfectly natural in seconds.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <button class="btn btn-primary btn-lg" onclick="startApp()">
+                            <i class="fas fa-bolt me-2"></i>Start Humanizing Now
+                        </button>
+                        <button class="btn btn-outline-primary btn-lg" onclick="showDemo()">
+                            <i class="fas fa-play-circle me-2"></i>Watch Demo
+                        </button>
+                    </div>
+                    <div class="d-flex flex-wrap gap-4 text-muted">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>No signup required</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>5 free uses daily</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Instant results</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="demo-card floating">
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-header bg-dark text-primary border-bottom">
+                                <i class="fas fa-magic me-2"></i>
+                                See the Magic in Action
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="row g-0">
+                                    <div class="col-md-6 p-4">
+                                        <h6 class="text-primary mb-3">
+                                            <i class="fas fa-robot me-2"></i>AI-Generated Text
+                                        </h6>
+                                        <p class="small text-muted demo-text">
+                                            "The utilization of artificial intelligence has revolutionized numerous industries by facilitating enhanced efficiency and productivity. This technological advancement enables organizations to optimize their operational workflows through automated processes and data-driven insights."
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 p-4 bg-dark">
+                                        <h6 class="text-warning mb-3">
+                                            <i class="fas fa-user me-2"></i>Humanized Output
+                                        </h6>
+                                        <p class="small text-light demo-text">
+                                            "AI has completely transformed how businesses work, making them more efficient and productive. Companies are using this technology to streamline their operations with automation and data-based decisions that actually make sense."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">Why Choose Hummanizer?</h2>
+                <p class="lead text-muted">Advanced technology meets simplicity</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card card border-0 h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mx-auto mb-4">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5 class="card-title">AI Detection Bypass</h5>
+                            <p class="card-text text-muted">Make your content completely undetectable by AI detection tools while preserving the original meaning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card card border-0 h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mx-auto mb-4">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h5 class="card-title">Lightning Fast</h5>
+                            <p class="card-text text-muted">Get humanized text in seconds with our optimized processing pipeline and advanced algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card card border-0 h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mx-auto mb-4">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                            <h5 class="card-title">Natural Flow</h5>
+                            <p class="card-text text-muted">Our AI understands context and creates text that flows naturally, just like human writing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">How It Works</h2>
+                <p class="lead text-muted">Three simple steps to human perfection</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="step-number">1</div>
+                    <h5 class="mt-3">Paste Your Text</h5>
+                    <p class="text-muted">Copy and paste any AI-generated content into our humanizer</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="step-number">2</div>
+                    <h5 class="mt-3">Click Humanize</h5>
+                    <p class="text-muted">Our advanced AI rewrites your text with natural human flow</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="step-number">3</div>
+                    <h5 class="mt-3">Copy & Use</h5>
+                    <p class="text-muted">Get your perfectly humanized text ready for any platform</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready to Humanize Your Content?</h2>
+            <p class="lead mb-4">Join thousands of users who trust Hummanizer for their content needs</p>
+            <button class="btn btn-light btn-lg px-5" onclick="startApp()">
+                <i class="fas fa-rocket me-2"></i>Start Now - It's Free
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="d-flex align-items-center mb-3">
+                        <i class="fas fa-robot me-2 text-primary"></i>
+                        HUMMANIZER
+                    </h5>
+                    <p class="text-muted">Transforming AI text into natural human writing with advanced technology and simple user experience.</p>
+                    <div class="social-links">
+                        <a href="
+                        https://wa.me/234" class="text-muted me-3"><i class="fab fa-whatsapp"></i></a>
+                      
+                        <a href="https://" class="text-muted me-3"><i class="fab fa-facebook"></i></a>
+                   
+                        <a href="#" class="text-muted me-3"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6>Product</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#features" class="text-muted text-decoration-none">Features</a></li>
+                        <li><a href="#pricing" class="text-muted text-decoration-none">Pricing</a></li>
+                        <li><a href="#how-it-works" class="text-muted text-decoration-none">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">About</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+
+                        <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <p>&copy; 2025 Hummanizer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
